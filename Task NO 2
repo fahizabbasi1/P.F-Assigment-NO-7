@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+    const int numStudents = 10;
+    int hours[numStudents];
+    for (int i = 0; i < numStudents; i++) {
+        cout << "Enter hours studied by student " << (i + 1) << ": ";
+        cin >> hours[i];
+    }
+    cout << "\nHours studied by each student:\n";
+    for (int i = 0; i < numStudents; i++) {
+        cout << "Student " << (i + 1) << " studied for " << hours[i] << " hours.\n";
+    }
+    return 0;
+}
